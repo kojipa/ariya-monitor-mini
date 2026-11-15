@@ -49,6 +49,12 @@
   .ok { color: var(--ok); font-weight: 700; }
   .ng { color: var(--ng); font-weight: 700; }
   a { color: var(--accent); }
+  .board .photo { display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: contain; border-radius: 8px; margin: 0 0 12px; background: #111; }
+  .figs { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; margin: 12px 0; }
+  figure { margin: 0; background: var(--card); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+  figure img { display: block; width: 100%; height: auto; }
+  figcaption { padding: 10px 14px; font-size: .9rem; color: var(--muted); }
+  figcaption b { color: var(--text); }
 </style>
 </head>
 <body>
@@ -69,6 +75,7 @@
   <h2>1. M5 本体を選ぶ</h2>
   <div class="boards">
     <div class="card board main">
+      <img class="photo" src="images/sticks3.jpg" alt="M5StickS3 で温度の画面を出しているところ" loading="lazy">
       <h3>M5StickS3<span class="tag">おすすめ</span></h3>
       <ul>
         <li>手のひらより小さい(48×24×15mm、約20g)</li>
@@ -78,6 +85,7 @@
       </ul>
     </div>
     <div class="card board">
+      <img class="photo" src="images/core2.jpg" alt="M5Stack Core2 で温度の画面を出しているところ" loading="lazy">
       <h3>M5Stack Core2</h3>
       <ul>
         <li>画面が大きい(2インチ、タッチ対応)</li>
@@ -88,6 +96,18 @@
     </div>
   </div>
   <p class="muted">迷ったら M5StickS3 で大丈夫です。手持ちのアダプターが Bluetooth クラシック専用のときだけ、Core2 を選んでください。</p>
+
+  <h3 style="font-size:1rem;margin:20px 0 4px">車に置いたところ</h3>
+  <div class="figs">
+    <figure>
+      <img src="images/sticks3_in_car.jpg" alt="天井のルームミラー付近に M5StickS3 を付けたところ。右上は画面の拡大" loading="lazy">
+      <figcaption><b>M5StickS3</b>:小さいので、ルームミラーの上など目立たない所に付けられます(右上は画面の拡大)。</figcaption>
+    </figure>
+    <figure>
+      <img src="images/core2_in_car.jpg" alt="ダッシュボードに M5Stack Core2 を置いたところ" loading="lazy">
+      <figcaption><b>M5Stack Core2</b>:画面が大きく、文字が読みやすい。大きさのめやすとして置いた写真です(操作ボタンをふさがない所に置いてください)。</figcaption>
+    </figure>
+  </div>
 
   <h2>2. 買う場所</h2>
   <div class="tbl">
